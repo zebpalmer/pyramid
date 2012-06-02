@@ -1010,14 +1010,12 @@ Instead, its main feature is that it works on all platforms that Pyramid
 needs to run on, making it a good choice as a default server from the
 perspective of Pyramid's developers.  
 
-Any WSGI server is capable of running a :app:`Pyramid` application.  But we
-suggest you stick with the default server for development, and that you wait
-to investigate other server options until you're ready to deploy your
-application to production.  Unless for some reason you need to develop on a
-non-local system, investigating alternate server options is usually a
-distraction until you're ready to deploy.  But we recommend developing using
-the default configuration on a local system that you have complete control
-over; it will provide the best development experience.
+Any WSGI server is capable of running a :app:`Pyramid` application, 
+though we recommend you stick with the default server for development. 
+Investigating alternate server options is often a distraction until you’re 
+ready to deploy unless you need to develop on a remote server. Using the 
+default configuration on a local system that you have complete control 
+over will provide the best development experience. 
 
 One popular production alternative to the default Waitress server is
 :term:`mod_wsgi`. You can use mod_wsgi to serve your :app:`Pyramid`
